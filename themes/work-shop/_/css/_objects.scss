@@ -51,6 +51,10 @@ img,video{
 	display: block;
 }
 
+.crop{
+	overflow: hidden;
+}
+
 .bg-brand{
 	background-color: $brand;
 }
@@ -175,3 +179,96 @@ ol,ul{
 .mt{
 	margin-top: 30px;
 }
+
+/********** @HEIGHTS AND WIDTHS *********/
+
+.height-full{
+	height: 100vh;
+}
+
+@for $i from 1 through 10 {
+  .vh#{$i}0{ 
+  	height: 10vh * $i;
+  }
+}
+
+@for $i from 1 through 10 {
+  .vw#{$i}0{
+  	width: 10% * $i; 
+  	width: 9.99vw * $i;
+
+  }
+}
+
+
+/********** @MARGINS AND PADDING *********/
+
+.m0{
+	margin: 0;
+}
+
+@for $i from 0 through 9 {
+  .m#{$i} { 
+  	margin-bottom: 1em * $i;
+  	margin-top: 1em * $i;
+  }
+}
+
+@for $i from 0 through 9 {
+  .mb#{$i} { 
+  	margin-bottom: 1em * $i;
+  }
+}
+
+@for $i from 0 through 9 {
+  .mt#{$i} { 
+  	margin-top: 1em * $i;
+  }
+}
+
+@for $i from 0 through 9 {
+  .ml#{$i} { 
+  	margin-left: 1em * $i;
+  }
+}
+
+@for $i from 0 through 9 {
+  .mr#{$i} { 
+  	margin-right: 1em * $i;
+  }
+}
+
+
+@for $i from 0 through 9 {
+  .p#{$i} { 
+  	padding: 1em * $i;
+  }
+}
+
+@for $i from 0 through 9 {
+  .pb#{$i} { 
+  	padding-bottom: 1em * $i;
+  }
+}
+
+@for $i from 0 through 9 {
+  .pt#{$i} { 
+  	padding-top: 1em * $i;
+  }
+}
+
+.padded-less{
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+}
+
+.padded{
+	padding-top: 6%;
+	padding-bottom: 7%;
+}
+
+.padded-more{
+	padding-top: 8%;
+	padding-bottom: 9%;
+}
+
