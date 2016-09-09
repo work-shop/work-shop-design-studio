@@ -6,7 +6,7 @@
 	animation: $name $duration $easing $delay $iteration;
 	-ms-animation: $name $duration $easing $delay $iteration;
 	-webkit-animation: $name $duration $easing $delay $iteration;
-	-0-animation:move $name $duration $easing $delay $iteration;
+	-o-animation:move $name $duration $easing $delay $iteration;
 	-moz-animation:move $name $duration $easing $delay $iteration;
 	animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;	
