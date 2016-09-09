@@ -376,7 +376,7 @@ h5,h6{
 		}
 		
 		.project-tile-info{
-			min-height: 50px;
+			min-height: 80px;
 		}
 	}
 	
@@ -772,7 +772,7 @@ h5,h6{
 
 .project-tile{
 	overflow: hidden;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	@include transition(all,.25s);
 	opacity: .85;
 	-webkit-filter: grayscale(30%);
@@ -798,6 +798,7 @@ h5,h6{
 	}
 	
 	.project-tile-info{
+		min-height: 130px;
 	
 		*{
 			color: #111;
@@ -806,7 +807,6 @@ h5,h6{
 			width: 80%;
 			margin-left: auto;
 			margin-right: auto;
-			height: 60px;
 		}
 	}
 	

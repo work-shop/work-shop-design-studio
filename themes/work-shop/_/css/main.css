@@ -772,7 +772,7 @@ h5, h6 {
   #menu .menu-projects h4 {
     line-height: 1.4; }
   #menu .menu-projects .project-tile-info {
-    min-height: 50px; }
+    min-height: 80px; }
   #menu address h4 {
     margin-top: 0;
     margin-bottom: 3px; }
@@ -1044,7 +1044,7 @@ h5, h6 {
 
 .project-tile {
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   transition: all 0.25s 0s ease;
   -moz-transition: all 0.25s 0s ease;
   -webkit-transition: all 0.25s 0s ease;
@@ -1068,13 +1068,14 @@ h5, h6 {
     -o-transition: opacity 0.25s 0s ease;
     background: rgba(255, 199, 55, 0.73);
     opacity: 0; }
-  .project-tile .project-tile-info * {
-    color: #111; }
-  .project-tile .project-tile-info h5 {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 60px; }
+  .project-tile .project-tile-info {
+    min-height: 130px; }
+    .project-tile .project-tile-info * {
+      color: #111; }
+    .project-tile .project-tile-info h5 {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; }
   .project-tile:hover {
     -webkit-filter: grayscale(10%);
     opacity: 1; }

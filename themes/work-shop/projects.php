@@ -13,7 +13,7 @@
 					);
 			
 					$i = 0;
-					while ( have_posts() ) : the_post();
+					while ( $q->have_posts() ) : $q->the_post();
 						
 						// requesting all of the post's relevant values
 						$title = get_the_title(); // title text
