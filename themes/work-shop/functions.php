@@ -175,15 +175,8 @@ add_action('wp_enqueue_scripts', 'theme_scripts');
 
 
 function theme_styles() { 
-  
-  wp_register_style( 'bootstrap', get_template_directory_uri() . '/_/css/bootstrap/bootstrap.css');    
-  wp_register_style( 'pictograms', get_template_directory_uri() . '/_/fonts/pictograms.css');  
   wp_register_style( 'main', get_template_directory_uri() . '/_/css/main.css');    
-   
-  wp_enqueue_style( 'bootstrap' );     
-  wp_enqueue_style( 'pictograms' );  
   wp_enqueue_style( 'main' );    
-  
 }
 add_action('wp_enqueue_scripts', 'theme_styles');
 
