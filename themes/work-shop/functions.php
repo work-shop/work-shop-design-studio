@@ -164,6 +164,11 @@ function theme_scripts() {
     wp_enqueue_script( 'instafeed' ); 
     wp_enqueue_script( 'functions' );
     wp_enqueue_script( 'current', $deps = array( 'jquery', 'instafeed' ) );
+
+	if (!file_exists( dirname( __FILE__ ) . '/env_prod' )){
+		wp_register_script( 'cssrefresh', get_template_directory_uri() . '/_/js/cssrefresh.js');
+		wp_enqueue_script( 'cssrefresh' );		
+	}	    
 	
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');
